@@ -1,0 +1,480 @@
+09:57:04 - INFO - Background worker thread running.
+09:57:04 - INFO - Started background processing thread for PacketProcessor.
+09:57:09 - INFO - Found iStirrer
+09:57:09 - INFO - Attempting to connect to iStirrer
+09:57:09 - INFO - Connected to iStirrer
+09:57:10 - INFO - Notifications started.
+09:57:10 - INFO - First raw packet received.
+09:57:10 - INFO - Response status from GET_INIT_INFO: COMPLETION_WITH_DATA | OK
+09:57:10 - INFO - stirrer_ID: 254
+09:57:10 - INFO - software_version: 1469
+09:57:10 - INFO - hardware_version: 3
+09:57:10 - INFO - sd_version: 140
+09:57:10 - INFO - protocol_version: 1321
+09:57:10 - INFO - serial_number: 3735928559
+09:57:10 - INFO - max_packet_size: 240
+09:57:10 - INFO - tx_queue_size: 64
+09:57:10 - INFO - number_of_devices: 8
+09:57:10 - INFO - bus_error_state_mask: None
+09:57:10 - INFO - sensors_ids: [1, 2, 3, 4, 5, 6, 14, 15]
+09:57:10 - INFO - sensors_bytes_length: {1: 2, 2: 6, 3: 6, 4: 2, 5: 24, 6: 6, 14: 4, 15: 1}
+09:57:10 - INFO - sensor_fs: [0, 11, 11, 0, 0, 7, 0, 0]
+09:57:10 - INFO - SYSTEM_LOG:
+	TWI INIT - OK
+	TEMP IC - OK
+	GYRO IC - OK
+	ACCEL IC - OK
+	CHROM IS - OK
+	MAGN IC - OK
+	SYS_STATE: change to SYS__IDLE_WAITING_CONNECT [ 01 ]
+	WAITING HOST...
+09:57:10 - INFO - SYSTEM_LOG:
+	SYS_STATE: change to SYS__IDLE_CONN
+09:57:10 - INFO - Command GET_INIT_INFO sent with parameters: 00
+09:57:10 - INFO - Response status from GET_POWER_THRESHOLD: COMPLETION_WITH_DATA | OK
+09:57:10 - INFO - threshold_power_alarm_mv: 3100
+09:57:10 - INFO - threshold_power_off_mv: 3100
+09:57:10 - INFO - Command GET_POWER_THRESHOLD sent with parameters: 00
+09:57:10 - INFO - Response status from SET_STIRRER_ID: COMPLETION | OK
+09:57:10 - INFO - Command SET_STIRRER_ID sent with parameters: 00 01 00
+09:57:10 - INFO - Currently enabled sensors: POWER, GYROSCOPE, ACCELEROMETER, TEMPERATURE, MAGNETOMETER
+09:57:10 - INFO - Response status from SET_SENSOR_ENABLE_MASK: COMPLETION | OK
+09:57:10 - INFO - Command SET_SENSOR_ENABLE_MASK sent with parameters: 00 2f 00 00 00
+09:57:10 - INFO - Response status from SET_LOG_VERBOSITY: COMPLETION | OK
+09:57:11 - INFO - Command SET_LOG_VERBOSITY sent with parameters: 02 14
+09:57:11 - INFO - Sending SET_TIME_CONFIG timings: {'t_timer': 100, 't_poll': {1: 10, 2: 1, 3: 1, 4: 10, 5: 5, 6: 1, 7: 10}, 't_send': 5}
+09:57:11 - INFO - Response status from SET_TIME_CONFIG: COMPLETION | OK
+09:57:11 - INFO - Command SET_TIME_CONFIG sent with parameters: 00 64 00 0a 00 01 00 01 00 0a 00 05 00 01 00 0a 00 05 00
+09:57:11 - INFO - Response status from GET_SENSOR_SAMPLING_LIST: COMPLETION_WITH_DATA | OK
+09:57:11 - INFO - Sampling settings for GYROSCOPE | Sampling list: (0.0, 12.5, 26.0, 52.0, 104.0, 208.0, 417.0, 833.0, 1667.0, 3333.0, 6667.0) | Sampling index: 0
+09:57:11 - INFO - Command GET_SENSOR_SAMPLING_LIST sent with parameters: 00 02
+09:57:11 - INFO - Response status from SET_SENSOR_SAMPLING_INDEX: COMPLETION | OK
+09:57:11 - INFO - Command SET_SENSOR_SAMPLING_INDEX sent with parameters: 00 02 04
+09:57:11 - INFO - Response status from SET_GYROSCOPE_SCALE: COMPLETION | OK
+09:57:12 - INFO - Command SET_GYROSCOPE_SCALE sent with parameters: 01 a0 0f
+09:57:12 - INFO - Response status from GET_SENSOR_SAMPLING_LIST: COMPLETION_WITH_DATA | OK
+09:57:12 - INFO - Sampling settings for ACCELEROMETER | Sampling list: (0.0, 12.5, 26.0, 52.0, 104.0, 208.0, 417.0, 833.0, 1667.0, 3333.0, 6667.0) | Sampling index: 0
+09:57:12 - INFO - Command GET_SENSOR_SAMPLING_LIST sent with parameters: 00 03
+09:57:12 - INFO - Response status from SET_SENSOR_SAMPLING_INDEX: COMPLETION | OK
+09:57:12 - INFO - Command SET_SENSOR_SAMPLING_INDEX sent with parameters: 00 03 04
+09:57:12 - INFO - Response status from SET_ACCELEROMETER_SCALE: COMPLETION | OK
+09:57:12 - INFO - Command SET_ACCELEROMETER_SCALE sent with parameters: 01 10 00
+09:57:12 - INFO - Response status from GET_SENSOR_SAMPLING_LIST: COMPLETION_WITH_DATA | OK
+09:57:12 - INFO - Sampling settings for MAGNETOMETER | Sampling list: (0.0, 10.0, 20.0, 40.0, 80.0, 155.0, 300.0) | Sampling index: 4
+09:57:12 - INFO - Command GET_SENSOR_SAMPLING_LIST sent with parameters: 00 06
+09:57:12 - INFO - Response status from SET_SENSOR_SAMPLING_INDEX: COMPLETION | OK
+09:57:13 - INFO - Command SET_SENSOR_SAMPLING_INDEX sent with parameters: 00 06 04
+09:57:13 - INFO - Response status from SET_MAGNETOMETER_SCALE: COMPLETION | OK
+09:57:13 - INFO - Command SET_MAGNETOMETER_SCALE sent with parameters: 01 10 00
+09:57:13 - INFO - Starting measurement run loop.
+09:57:13 - INFO - Command START_STOP sent with parameters: 01
+09:57:14 - INFO - Response status from START_STOP: COMPLETION | OK
+09:57:14 - INFO - Starting measurements...
+09:57:14 - INFO - GYROSCOPE   	|		| Sample rate: 0.00 Hz
+09:57:14 - INFO - ACCELEROMETER	|		| Sample rate: 0.00 Hz
+09:57:14 - INFO - MAGNETOMETER	|		| Sample rate: 0.00 Hz
+09:57:14 - INFO - SYSTEM_LOG:
+	[meas_sens_start] [0] MAGN_WHO_AM_I_RESP read error - 0x00
+	Measurement started...
+	SYS_STATE: change to SYS__MEAS_ACTIVE [ 03 ]
+09:57:15 - ERROR - Sample mismatch in POWER: current_cycle=0, cyclic_sample_index=2
+09:57:15 - ERROR - Sample mismatch: POWER	|	Received cyclic index: 2 |	Bytes length : 2 |	Missed samples: 2 |	Next: 1
+09:57:15 - INFO - POWER       	|	magn X=28.643, magn Y=-2.747, magn Z=-0.407	| Sample rate: 0.00 Hz
+09:57:15 - INFO - TEMPERATURE 	|		| Sample rate: 0.00 Hz
+09:57:16 - INFO - GYROSCOPE   	|	gyro X=5.243, gyro Y=1.887, gyro Z=-379.301	| Sample rate: 147.02 Hz
+09:57:16 - INFO - MAGNETOMETER	|	magn X=28.449, magn Y=-4.458, magn Z=-0.442	| Sample rate: 99.59 Hz
+09:57:16 - INFO - ACCELEROMETER	|	accel X=0.167, accel Y=0.552, accel Z=1.004	| Sample rate: 139.22 Hz
+09:57:17 - INFO - POWER       	|	4.171	| Sample rate: 1.44 Hz
+09:57:18 - INFO - TEMPERATURE 	|	15.780	| Sample rate: 1.36 Hz
+09:57:18 - INFO - GYROSCOPE   	|	gyro X=3.658, gyro Y=1.002, gyro Z=-262.009	| Sample rate: 126.77 Hz
+09:57:18 - INFO - ACCELEROMETER	|	accel X=-1.133, accel Y=0.089, accel Z=0.991	| Sample rate: 124.79 Hz
+09:57:18 - INFO - MAGNETOMETER	|	magn X=26.684, magn Y=-0.694, magn Z=-1.680	| Sample rate: 92.54 Hz
+09:57:20 - INFO - POWER       	|	4.177	| Sample rate: 1.20 Hz
+09:57:20 - INFO - GYROSCOPE   	|	gyro X=3.868, gyro Y=0.606, gyro Z=-331.932	| Sample rate: 119.99 Hz
+09:57:20 - INFO - MAGNETOMETER	|	magn X=28.643, magn Y=-3.259, magn Z=-0.442	| Sample rate: 88.67 Hz
+09:57:20 - INFO - ACCELEROMETER	|	accel X=0.040, accel Y=0.382, accel Z=1.017	| Sample rate: 121.44 Hz
+09:57:21 - INFO - TEMPERATURE 	|	15.820	| Sample rate: 1.18 Hz
+09:57:22 - INFO - GYROSCOPE   	|	gyro X=1.445, gyro Y=0.140, gyro Z=-157.368	| Sample rate: 118.61 Hz
+09:57:22 - INFO - MAGNETOMETER	|	magn X=28.236, magn Y=-4.725, magn Z=-0.763	| Sample rate: 85.73 Hz
+09:57:22 - INFO - ACCELEROMETER	|	accel X=0.773, accel Y=-0.582, accel Z=1.008	| Sample rate: 117.22 Hz
+09:57:23 - INFO - POWER       	|	4.195	| Sample rate: 1.13 Hz
+09:57:24 - INFO - TEMPERATURE 	|	15.830	| Sample rate: 1.12 Hz
+09:57:24 - INFO - GYROSCOPE   	|	gyro X=1.095, gyro Y=0.326, gyro Z=-42.010	| Sample rate: 109.70 Hz
+09:57:24 - INFO - ACCELEROMETER	|	accel X=0.067, accel Y=-0.326, accel Z=0.997	| Sample rate: 110.42 Hz
+09:57:24 - INFO - MAGNETOMETER	|	magn X=28.353, magn Y=-1.845, magn Z=-0.342	| Sample rate: 81.50 Hz
+09:57:25 - INFO - POWER       	|	4.171	| Sample rate: 1.12 Hz
+09:57:26 - INFO - GYROSCOPE   	|	gyro X=5.848, gyro Y=5.010, gyro Z=-381.491	| Sample rate: 110.31 Hz
+09:57:26 - INFO - MAGNETOMETER	|	magn X=26.859, magn Y=-0.613, magn Z=-0.058	| Sample rate: 80.63 Hz
+09:57:26 - INFO - ACCELEROMETER	|	accel X=0.078, accel Y=-1.041, accel Z=1.016	| Sample rate: 108.98 Hz
+09:57:27 - INFO - TEMPERATURE 	|	15.860	| Sample rate: 1.11 Hz
+09:57:28 - INFO - POWER       	|	4.195	| Sample rate: 1.10 Hz
+09:57:28 - INFO - GYROSCOPE   	|	gyro X=2.330, gyro Y=1.724, gyro Z=-327.458	| Sample rate: 109.20 Hz
+09:57:28 - INFO - ACCELEROMETER	|	accel X=0.086, accel Y=-0.476, accel Z=0.992	| Sample rate: 110.32 Hz
+09:57:28 - INFO - MAGNETOMETER	|	magn X=27.434, magn Y=-1.017, magn Z=-0.916	| Sample rate: 81.51 Hz
+09:57:30 - INFO - TEMPERATURE 	|	15.850	| Sample rate: 1.11 Hz
+09:57:30 - INFO - GYROSCOPE   	|	gyro X=1.771, gyro Y=1.025, gyro Z=-168.902	| Sample rate: 110.23 Hz
+09:57:31 - INFO - MAGNETOMETER	|	magn X=28.694, magn Y=-3.451, magn Z=-0.425	| Sample rate: 80.62 Hz
+09:57:31 - INFO - ACCELEROMETER	|	accel X=-0.004, accel Y=-0.219, accel Z=1.010	| Sample rate: 110.31 Hz
+09:57:31 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:57:32 - INFO - GYROSCOPE   	|	gyro X=2.190, gyro Y=-0.769, gyro Z=-1.468	| Sample rate: 111.41 Hz
+09:57:33 - INFO - ACCELEROMETER	|	accel X=0.390, accel Y=-0.383, accel Z=0.996	| Sample rate: 109.12 Hz
+09:57:33 - INFO - MAGNETOMETER	|	magn X=28.849, magn Y=-3.359, magn Z=-0.296	| Sample rate: 80.71 Hz
+09:57:33 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:57:33 - INFO - TEMPERATURE 	|	15.870	| Sample rate: 1.11 Hz
+09:57:34 - INFO - GYROSCOPE   	|	gyro X=0.443, gyro Y=1.445, gyro Z=-127.964	| Sample rate: 109.21 Hz
+09:57:35 - INFO - MAGNETOMETER	|	magn X=28.977, magn Y=-3.126, magn Z=-0.254	| Sample rate: 81.76 Hz
+09:57:35 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:57:35 - INFO - ACCELEROMETER	|	accel X=0.431, accel Y=0.026, accel Z=1.015	| Sample rate: 111.60 Hz
+09:57:36 - INFO - TEMPERATURE 	|	15.870	| Sample rate: 1.11 Hz
+09:57:36 - INFO - GYROSCOPE   	|	gyro X=1.748, gyro Y=0.256, gyro Z=-104.407	| Sample rate: 111.43 Hz
+09:57:37 - INFO - ACCELEROMETER	|	accel X=-0.604, accel Y=-0.247, accel Z=1.010	| Sample rate: 109.80 Hz
+09:57:37 - INFO - MAGNETOMETER	|	magn X=28.778, magn Y=-4.019, magn Z=-0.340	| Sample rate: 81.48 Hz
+09:57:38 - INFO - POWER       	|	4.183	| Sample rate: 1.10 Hz
+09:57:38 - INFO - GYROSCOPE   	|	gyro X=0.909, gyro Y=-0.163, gyro Z=-54.802	| Sample rate: 109.20 Hz
+09:57:39 - INFO - TEMPERATURE 	|	15.880	| Sample rate: 1.11 Hz
+09:57:39 - INFO - MAGNETOMETER	|	magn X=28.729, magn Y=-3.044, magn Z=-0.325	| Sample rate: 81.81 Hz
+09:57:39 - INFO - ACCELEROMETER	|	accel X=0.039, accel Y=0.280, accel Z=0.996	| Sample rate: 111.30 Hz
+09:57:40 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:57:40 - INFO - GYROSCOPE   	|	gyro X=0.350, gyro Y=1.515, gyro Z=-119.249	| Sample rate: 111.40 Hz
+09:57:41 - INFO - MAGNETOMETER	|	magn X=28.143, magn Y=-4.975, magn Z=-0.497	| Sample rate: 80.67 Hz
+09:57:41 - INFO - ACCELEROMETER	|	accel X=0.105, accel Y=0.529, accel Z=1.017	| Sample rate: 109.71 Hz
+09:57:42 - INFO - TEMPERATURE 	|	15.880	| Sample rate: 1.11 Hz
+09:57:43 - INFO - GYROSCOPE   	|	gyro X=4.101, gyro Y=1.491, gyro Z=-256.323	| Sample rate: 109.21 Hz
+09:57:43 - INFO - POWER       	|	4.189	| Sample rate: 1.11 Hz
+09:57:43 - INFO - MAGNETOMETER	|	magn X=26.452, magn Y=-0.568, magn Z=-0.593	| Sample rate: 81.52 Hz
+09:57:43 - INFO - ACCELEROMETER	|	accel X=-0.142, accel Y=0.199, accel Z=0.987	| Sample rate: 110.32 Hz
+09:57:45 - INFO - GYROSCOPE   	|	gyro X=2.050, gyro Y=1.421, gyro Z=-215.502	| Sample rate: 110.43 Hz
+09:57:45 - INFO - TEMPERATURE 	|	15.890	| Sample rate: 1.11 Hz
+09:57:45 - INFO - MAGNETOMETER	|	magn X=28.269, magn Y=-1.667, magn Z=-0.105	| Sample rate: 81.79 Hz
+09:57:45 - INFO - ACCELEROMETER	|	accel X=1.014, accel Y=-0.330, accel Z=1.006	| Sample rate: 110.32 Hz
+09:57:46 - INFO - POWER       	|	4.166	| Sample rate: 1.11 Hz
+09:57:47 - INFO - GYROSCOPE   	|	gyro X=0.629, gyro Y=0.979, gyro Z=-149.819	| Sample rate: 110.55 Hz
+09:57:47 - INFO - MAGNETOMETER	|	magn X=28.797, magn Y=-3.222, magn Z=-0.312	| Sample rate: 81.48 Hz
+09:57:47 - INFO - ACCELEROMETER	|	accel X=-0.183, accel Y=0.527, accel Z=1.002	| Sample rate: 110.15 Hz
+09:57:48 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:57:48 - INFO - TEMPERATURE 	|	15.900	| Sample rate: 1.11 Hz
+09:57:49 - INFO - GYROSCOPE   	|	gyro X=0.280, gyro Y=0.955, gyro Z=-150.238	| Sample rate: 109.28 Hz
+09:57:49 - INFO - MAGNETOMETER	|	magn X=24.425, magn Y=-0.442, magn Z=-1.019	| Sample rate: 81.48 Hz
+09:57:49 - INFO - ACCELEROMETER	|	accel X=0.186, accel Y=-0.671, accel Z=1.024	| Sample rate: 112.18 Hz
+09:57:51 - INFO - POWER       	|	4.171	| Sample rate: 1.10 Hz
+09:57:51 - INFO - TEMPERATURE 	|	15.890	| Sample rate: 1.11 Hz
+09:57:51 - INFO - GYROSCOPE   	|	gyro X=0.839, gyro Y=0.023, gyro Z=-28.100	| Sample rate: 111.43 Hz
+09:57:51 - INFO - MAGNETOMETER	|	magn X=28.584, magn Y=-2.553, magn Z=-0.292	| Sample rate: 81.51 Hz
+09:57:51 - INFO - ACCELEROMETER	|	accel X=-0.476, accel Y=0.251, accel Z=0.986	| Sample rate: 109.35 Hz
+09:57:53 - INFO - TEMPERATURE 	|	15.910	| Sample rate: 1.10 Hz
+09:57:53 - INFO - GYROSCOPE   	|	gyro X=2.027, gyro Y=0.769, gyro Z=-115.824	| Sample rate: 109.33 Hz
+09:57:53 - INFO - MAGNETOMETER	|	magn X=28.126, magn Y=-1.732, magn Z=-0.482	| Sample rate: 81.71 Hz
+09:57:53 - INFO - ACCELEROMETER	|	accel X=0.003, accel Y=0.529, accel Z=1.014	| Sample rate: 111.24 Hz
+09:57:54 - INFO - POWER       	|	4.171	| Sample rate: 1.10 Hz
+09:57:55 - INFO - GYROSCOPE   	|	gyro X=5.732, gyro Y=2.120, gyro Z=-335.706	| Sample rate: 111.50 Hz
+09:57:55 - INFO - MAGNETOMETER	|	magn X=28.503, magn Y=-2.165, magn Z=-0.354	| Sample rate: 81.76 Hz
+09:57:55 - INFO - ACCELEROMETER	|	accel X=-0.033, accel Y=0.168, accel Z=1.011	| Sample rate: 110.36 Hz
+09:57:56 - INFO - TEMPERATURE 	|	15.920	| Sample rate: 1.10 Hz
+09:57:57 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:57:57 - INFO - GYROSCOPE   	|	gyro X=0.722, gyro Y=0.466, gyro Z=-73.069	| Sample rate: 110.68 Hz
+09:57:57 - INFO - MAGNETOMETER	|	magn X=27.189, magn Y=-0.865, magn Z=-0.884	| Sample rate: 80.69 Hz
+09:57:57 - INFO - ACCELEROMETER	|	accel X=0.083, accel Y=0.065, accel Z=1.007	| Sample rate: 109.95 Hz
+09:57:59 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:57:59 - INFO - TEMPERATURE 	|	15.890	| Sample rate: 1.10 Hz
+09:57:59 - INFO - GYROSCOPE   	|	gyro X=3.518, gyro Y=2.796, gyro Z=-154.945	| Sample rate: 109.39 Hz
+09:57:59 - INFO - MAGNETOMETER	|	magn X=28.175, magn Y=-5.473, magn Z=-0.148	| Sample rate: 81.56 Hz
+09:57:59 - INFO - ACCELEROMETER	|	accel X=0.028, accel Y=0.035, accel Z=1.038	| Sample rate: 111.38 Hz
+09:58:01 - INFO - GYROSCOPE   	|	gyro X=1.864, gyro Y=1.002, gyro Z=-194.741	| Sample rate: 110.59 Hz
+09:58:01 - INFO - MAGNETOMETER	|	magn X=27.320, magn Y=-5.987, magn Z=-0.652	| Sample rate: 80.54 Hz
+09:58:01 - INFO - ACCELEROMETER	|	accel X=0.506, accel Y=-0.592, accel Z=1.004	| Sample rate: 108.97 Hz
+09:58:02 - INFO - POWER       	|	4.171	| Sample rate: 1.10 Hz
+09:58:02 - INFO - TEMPERATURE 	|	15.920	| Sample rate: 1.11 Hz
+09:58:03 - INFO - GYROSCOPE   	|	gyro X=0.093, gyro Y=0.023, gyro Z=-23.580	| Sample rate: 109.10 Hz
+09:58:03 - INFO - ACCELEROMETER	|	accel X=-1.400, accel Y=0.473, accel Z=0.964	| Sample rate: 110.51 Hz
+09:58:03 - INFO - MAGNETOMETER	|	magn X=28.825, magn Y=-3.624, magn Z=-0.291	| Sample rate: 81.63 Hz
+09:58:04 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:58:05 - INFO - TEMPERATURE 	|	15.910	| Sample rate: 1.11 Hz
+09:58:05 - INFO - GYROSCOPE   	|	gyro X=2.074, gyro Y=-0.699, gyro Z=-5.312	| Sample rate: 110.87 Hz
+09:58:06 - INFO - MAGNETOMETER	|	magn X=28.222, magn Y=-5.174, magn Z=-0.378	| Sample rate: 80.36 Hz
+09:58:06 - INFO - ACCELEROMETER	|	accel X=-0.067, accel Y=-0.151, accel Z=1.007	| Sample rate: 109.25 Hz
+09:58:06 - INFO - POWER       	|	4.195	| Sample rate: 1.11 Hz
+09:58:07 - INFO - GYROSCOPE   	|	gyro X=1.258, gyro Y=1.608, gyro Z=-213.638	| Sample rate: 111.00 Hz
+09:58:08 - INFO - ACCELEROMETER	|	accel X=0.938, accel Y=0.348, accel Z=1.045	| Sample rate: 110.20 Hz
+09:58:08 - INFO - TEMPERATURE 	|	15.920	| Sample rate: 1.11 Hz
+09:58:08 - INFO - MAGNETOMETER	|	magn X=25.541, magn Y=-0.376, magn Z=-0.296	| Sample rate: 81.73 Hz
+09:58:09 - INFO - POWER       	|	4.177	| Sample rate: 1.12 Hz
+09:58:09 - INFO - GYROSCOPE   	|	gyro X=5.219, gyro Y=1.468, gyro Z=-243.066	| Sample rate: 109.34 Hz
+09:58:10 - INFO - MAGNETOMETER	|	magn X=28.437, magn Y=-4.680, magn Z=-0.410	| Sample rate: 80.60 Hz
+09:58:10 - INFO - ACCELEROMETER	|	accel X=0.273, accel Y=-0.487, accel Z=1.017	| Sample rate: 109.20 Hz
+09:58:11 - INFO - TEMPERATURE 	|	15.930	| Sample rate: 1.11 Hz
+09:58:11 - INFO - GYROSCOPE   	|	gyro X=4.800, gyro Y=-0.163, gyro Z=-123.420	| Sample rate: 111.61 Hz
+09:58:12 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:58:12 - INFO - ACCELEROMETER	|	accel X=-0.031, accel Y=0.176, accel Z=1.010	| Sample rate: 110.29 Hz
+09:58:12 - INFO - MAGNETOMETER	|	magn X=23.888, magn Y=-0.456, magn Z=-1.373	| Sample rate: 81.40 Hz
+09:58:13 - INFO - GYROSCOPE   	|	gyro X=4.054, gyro Y=3.542, gyro Z=-458.567	| Sample rate: 109.20 Hz
+09:58:14 - INFO - TEMPERATURE 	|	15.940	| Sample rate: 1.12 Hz
+09:58:14 - INFO - MAGNETOMETER	|	magn X=28.514, magn Y=-2.497, magn Z=-0.482	| Sample rate: 80.60 Hz
+09:58:14 - INFO - ACCELEROMETER	|	accel X=-0.040, accel Y=0.067, accel Z=0.998	| Sample rate: 109.20 Hz
+09:58:15 - INFO - POWER       	|	4.171	| Sample rate: 1.10 Hz
+09:58:15 - INFO - GYROSCOPE   	|	gyro X=6.291, gyro Y=4.520, gyro Z=-451.135	| Sample rate: 110.80 Hz
+09:58:16 - INFO - MAGNETOMETER	|	magn X=28.821, magn Y=-2.768, magn Z=-0.237	| Sample rate: 81.42 Hz
+09:58:16 - INFO - ACCELEROMETER	|	accel X=0.024, accel Y=-0.167, accel Z=0.999	| Sample rate: 110.81 Hz
+09:58:17 - INFO - POWER       	|	4.166	| Sample rate: 1.10 Hz
+09:58:17 - INFO - TEMPERATURE 	|	15.950	| Sample rate: 1.11 Hz
+09:58:17 - INFO - GYROSCOPE   	|	gyro X=0.629, gyro Y=0.140, gyro Z=-20.970	| Sample rate: 109.88 Hz
+09:58:18 - INFO - MAGNETOMETER	|	magn X=24.970, magn Y=-0.411, magn Z=-2.234	| Sample rate: 81.67 Hz
+09:58:18 - INFO - ACCELEROMETER	|	accel X=-0.444, accel Y=0.018, accel Z=1.020	| Sample rate: 111.29 Hz
+09:58:19 - INFO - POWER       	|	4.183	| Sample rate: 1.10 Hz
+09:58:19 - INFO - TEMPERATURE 	|	15.940	| Sample rate: 1.10 Hz
+09:58:20 - INFO - GYROSCOPE   	|	gyro X=1.911, gyro Y=1.445, gyro Z=-315.715	| Sample rate: 110.10 Hz
+09:58:20 - INFO - MAGNETOMETER	|	magn X=28.821, magn Y=-3.766, magn Z=-0.310	| Sample rate: 80.85 Hz
+09:58:20 - INFO - ACCELEROMETER	|	accel X=0.086, accel Y=-0.421, accel Z=1.004	| Sample rate: 110.32 Hz
+09:58:21 - INFO - POWER       	|	4.183	| Sample rate: 1.10 Hz
+09:58:22 - INFO - GYROSCOPE   	|	gyro X=3.076, gyro Y=2.144, gyro Z=-393.421	| Sample rate: 110.68 Hz
+09:58:22 - INFO - TEMPERATURE 	|	15.950	| Sample rate: 1.10 Hz
+09:58:22 - INFO - MAGNETOMETER	|	magn X=28.507, magn Y=-4.217, magn Z=-0.442	| Sample rate: 81.60 Hz
+09:58:22 - INFO - ACCELEROMETER	|	accel X=-0.272, accel Y=0.243, accel Z=0.976	| Sample rate: 111.39 Hz
+09:58:24 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:58:24 - INFO - GYROSCOPE   	|	gyro X=5.476, gyro Y=2.563, gyro Z=-415.579	| Sample rate: 109.31 Hz
+09:58:24 - INFO - MAGNETOMETER	|	magn X=28.783, magn Y=-4.096, magn Z=-0.299	| Sample rate: 80.60 Hz
+09:58:24 - INFO - ACCELEROMETER	|	accel X=0.114, accel Y=-0.115, accel Z=1.000	| Sample rate: 110.30 Hz
+09:58:25 - INFO - TEMPERATURE 	|	15.950	| Sample rate: 1.10 Hz
+09:58:26 - INFO - GYROSCOPE   	|	gyro X=-1.491, gyro Y=-0.256, gyro Z=-32.806	| Sample rate: 111.53 Hz
+09:58:26 - INFO - MAGNETOMETER	|	magn X=28.727, magn Y=-4.311, magn Z=-0.284	| Sample rate: 81.59 Hz
+09:58:26 - INFO - ACCELEROMETER	|	accel X=-0.024, accel Y=0.332, accel Z=1.013	| Sample rate: 111.30 Hz
+09:58:27 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:58:27 - INFO - TEMPERATURE 	|	15.960	| Sample rate: 1.11 Hz
+09:58:28 - INFO - GYROSCOPE   	|	gyro X=1.445, gyro Y=1.328, gyro Z=-163.636	| Sample rate: 109.35 Hz
+09:58:28 - INFO - MAGNETOMETER	|	magn X=26.607, magn Y=-0.636, magn Z=-1.127	| Sample rate: 80.81 Hz
+09:58:28 - INFO - ACCELEROMETER	|		| Sample rate: 110.43 Hz
+09:58:30 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:58:30 - INFO - TEMPERATURE 	|	15.960	| Sample rate: 1.11 Hz
+09:58:30 - INFO - GYROSCOPE   	|	gyro X=1.375, gyro Y=0.210, gyro Z=-17.405	| Sample rate: 110.97 Hz
+09:58:31 - INFO - ACCELEROMETER	|	accel X=0.080, accel Y=-0.296, accel Z=1.001	| Sample rate: 110.12 Hz
+09:58:31 - INFO - MAGNETOMETER	|	magn X=27.899, magn Y=-1.433, magn Z=-0.904	| Sample rate: 81.36 Hz
+09:58:32 - INFO - GYROSCOPE   	|	gyro X=3.635, gyro Y=1.794, gyro Z=-282.116	| Sample rate: 109.30 Hz
+09:58:33 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:58:33 - INFO - ACCELEROMETER	|	accel X=0.192, accel Y=-0.171, accel Z=1.009	| Sample rate: 110.30 Hz
+09:58:33 - INFO - TEMPERATURE 	|	15.960	| Sample rate: 1.10 Hz
+09:58:33 - INFO - MAGNETOMETER	|	magn X=27.144, magn Y=-0.828, magn Z=-0.846	| Sample rate: 81.47 Hz
+09:58:34 - INFO - GYROSCOPE   	|	gyro X=5.569, gyro Y=1.957, gyro Z=-380.908	| Sample rate: 111.18 Hz
+09:58:35 - INFO - ACCELEROMETER	|	accel X=-0.051, accel Y=0.284, accel Z=1.009	| Sample rate: 110.51 Hz
+09:58:35 - INFO - MAGNETOMETER	|	magn X=28.620, magn Y=-3.016, magn Z=-0.357	| Sample rate: 81.86 Hz
+09:58:36 - INFO - POWER       	|	4.189	| Sample rate: 1.12 Hz
+09:58:36 - INFO - TEMPERATURE 	|	15.990	| Sample rate: 1.12 Hz
+09:58:36 - INFO - GYROSCOPE   	|	gyro X=5.825, gyro Y=2.516, gyro Z=-397.894	| Sample rate: 109.11 Hz
+09:58:37 - INFO - MAGNETOMETER	|	magn X=26.625, magn Y=-0.598, magn Z=-0.698	| Sample rate: 80.61 Hz
+09:58:37 - INFO - ACCELEROMETER	|	accel X=-0.092, accel Y=-0.340, accel Z=0.982	| Sample rate: 109.59 Hz
+09:58:38 - INFO - GYROSCOPE   	|	gyro X=5.965, gyro Y=5.918, gyro Z=-380.233	| Sample rate: 111.42 Hz
+09:58:39 - INFO - POWER       	|	4.177	| Sample rate: 1.12 Hz
+09:58:39 - INFO - TEMPERATURE 	|	15.990	| Sample rate: 1.10 Hz
+09:58:39 - INFO - MAGNETOMETER	|	magn X=28.888, magn Y=-3.240, magn Z=-0.250	| Sample rate: 81.42 Hz
+09:58:39 - INFO - ACCELEROMETER	|	accel X=0.022, accel Y=-0.348, accel Z=0.996	| Sample rate: 109.93 Hz
+09:58:40 - INFO - GYROSCOPE   	|	gyro X=2.726, gyro Y=3.565, gyro Z=-301.572	| Sample rate: 109.52 Hz
+09:58:41 - INFO - TEMPERATURE 	|	16.010	| Sample rate: 1.10 Hz
+09:58:41 - INFO - MAGNETOMETER	|	magn X=28.811, magn Y=-3.058, magn Z=-0.311	| Sample rate: 81.69 Hz
+09:58:41 - INFO - ACCELEROMETER	|	accel X=-0.074, accel Y=-0.104, accel Z=1.007	| Sample rate: 111.42 Hz
+09:58:42 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:58:42 - INFO - GYROSCOPE   	|	gyro X=2.540, gyro Y=2.423, gyro Z=-237.613	| Sample rate: 111.30 Hz
+09:58:43 - INFO - MAGNETOMETER	|	magn X=28.559, magn Y=-3.387, magn Z=-0.389	| Sample rate: 80.57 Hz
+09:58:43 - INFO - ACCELEROMETER	|	accel X=-0.132, accel Y=0.160, accel Z=1.000	| Sample rate: 109.39 Hz
+09:58:44 - INFO - TEMPERATURE 	|	15.990	| Sample rate: 1.11 Hz
+09:58:44 - INFO - GYROSCOPE   	|	gyro X=-0.023, gyro Y=-0.047, gyro Z=-13.328	| Sample rate: 110.56 Hz
+09:58:45 - INFO - POWER       	|	4.189	| Sample rate: 1.11 Hz
+09:58:45 - INFO - ACCELEROMETER	|	accel X=-1.038, accel Y=0.296, accel Z=0.995	| Sample rate: 110.20 Hz
+09:58:45 - INFO - MAGNETOMETER	|	magn X=26.466, magn Y=-0.613, magn Z=-1.764	| Sample rate: 81.43 Hz
+09:58:47 - INFO - GYROSCOPE   	|	gyro X=0.769, gyro Y=0.233, gyro Z=-81.923	| Sample rate: 108.99 Hz
+09:58:47 - INFO - TEMPERATURE 	|	16.010	| Sample rate: 1.11 Hz
+09:58:47 - INFO - MAGNETOMETER	|	magn X=28.652, magn Y=-3.247, magn Z=-0.381	| Sample rate: 80.60 Hz
+09:58:47 - INFO - ACCELEROMETER	|	accel X=0.129, accel Y=0.498, accel Z=1.014	| Sample rate: 109.49 Hz
+09:58:48 - INFO - POWER       	|	4.183	| Sample rate: 1.11 Hz
+09:58:49 - INFO - TEMPERATURE 	|	16.000	| Sample rate: 1.10 Hz
+09:58:49 - INFO - GYROSCOPE   	|	gyro X=-0.163, gyro Y=0.443, gyro Z=-56.153	| Sample rate: 110.24 Hz
+09:58:49 - INFO - MAGNETOMETER	|	magn X=28.440, magn Y=-4.259, magn Z=-0.427	| Sample rate: 81.58 Hz
+09:58:49 - INFO - ACCELEROMETER	|	accel X=0.010, accel Y=0.433, accel Z=1.011	| Sample rate: 109.80 Hz
+09:58:51 - INFO - POWER       	|	4.177	| Sample rate: 1.12 Hz
+09:58:51 - INFO - GYROSCOPE   	|	gyro X=0.093, gyro Y=0.396, gyro Z=-72.416	| Sample rate: 108.57 Hz
+09:58:51 - INFO - MAGNETOMETER	|	magn X=28.620, magn Y=-2.932, magn Z=-0.393	| Sample rate: 81.19 Hz
+09:58:51 - INFO - ACCELEROMETER	|	accel X=-0.456, accel Y=-0.084, accel Z=1.018	| Sample rate: 111.09 Hz
+09:58:52 - INFO - TEMPERATURE 	|	16.020	| Sample rate: 1.10 Hz
+09:58:53 - INFO - GYROSCOPE   	|	gyro X=2.540, gyro Y=-0.303, gyro Z=-110.093	| Sample rate: 111.60 Hz
+09:58:53 - INFO - ACCELEROMETER	|	accel X=0.017, accel Y=-0.381, accel Z=0.998	| Sample rate: 109.93 Hz
+09:58:53 - INFO - MAGNETOMETER	|	magn X=26.106, magn Y=-0.444, magn Z=-0.497	| Sample rate: 81.64 Hz
+09:58:54 - INFO - POWER       	|	4.195	| Sample rate: 1.11 Hz
+09:58:55 - INFO - TEMPERATURE 	|	16.010	| Sample rate: 1.10 Hz
+09:58:55 - INFO - GYROSCOPE   	|	gyro X=0.489, gyro Y=-0.023, gyro Z=-29.055	| Sample rate: 109.08 Hz
+09:58:55 - INFO - MAGNETOMETER	|	magn X=28.040, magn Y=-1.658, magn Z=-0.767	| Sample rate: 81.68 Hz
+09:58:55 - INFO - ACCELEROMETER	|	accel X=-0.640, accel Y=0.384, accel Z=0.972	| Sample rate: 111.50 Hz
+09:58:57 - INFO - POWER       	|	4.183	| Sample rate: 1.11 Hz
+09:58:57 - INFO - TEMPERATURE 	|	16.010	| Sample rate: 1.11 Hz
+09:58:57 - INFO - GYROSCOPE   	|	gyro X=3.029, gyro Y=1.817, gyro Z=-358.377	| Sample rate: 111.29 Hz
+09:58:57 - INFO - MAGNETOMETER	|	magn X=28.259, magn Y=-1.725, magn Z=-0.215	| Sample rate: 81.58 Hz
+09:58:57 - INFO - ACCELEROMETER	|	accel X=0.200, accel Y=-0.463, accel Z=1.004	| Sample rate: 109.40 Hz
+09:58:59 - INFO - GYROSCOPE   	|	gyro X=-0.559, gyro Y=-0.117, gyro Z=-15.308	| Sample rate: 109.21 Hz
+09:58:59 - INFO - MAGNETOMETER	|	magn X=28.215, magn Y=-5.026, magn Z=-0.452	| Sample rate: 81.52 Hz
+09:58:59 - INFO - ACCELEROMETER	|	accel X=-0.293, accel Y=0.022, accel Z=1.013	| Sample rate: 111.29 Hz
+09:59:00 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:59:00 - INFO - TEMPERATURE 	|	16.050	| Sample rate: 1.11 Hz
+09:59:01 - INFO - GYROSCOPE   	|	gyro X=1.212, gyro Y=1.002, gyro Z=-118.993	| Sample rate: 111.08 Hz
+09:59:01 - INFO - MAGNETOMETER	|	magn X=28.316, magn Y=-5.057, magn Z=-0.325	| Sample rate: 80.37 Hz
+09:59:01 - INFO - ACCELEROMETER	|	accel X=-0.970, accel Y=-0.168, accel Z=0.984	| Sample rate: 109.26 Hz
+09:59:03 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:59:03 - INFO - TEMPERATURE 	|	16.030	| Sample rate: 1.10 Hz
+09:59:03 - INFO - GYROSCOPE   	|	gyro X=0.373, gyro Y=-0.047, gyro Z=-17.615	| Sample rate: 109.42 Hz
+09:59:04 - INFO - ACCELEROMETER	|	accel X=-0.530, accel Y=-0.366, accel Z=1.008	| Sample rate: 110.01 Hz
+09:59:04 - INFO - MAGNETOMETER	|	magn X=28.774, magn Y=-3.039, magn Z=-0.304	| Sample rate: 81.20 Hz
+09:59:05 - INFO - TEMPERATURE 	|	16.040	| Sample rate: 1.10 Hz
+09:59:05 - INFO - GYROSCOPE   	|	gyro X=0.559, gyro Y=0.676, gyro Z=-91.546	| Sample rate: 111.22 Hz
+09:59:06 - INFO - POWER       	|	4.166	| Sample rate: 1.11 Hz
+09:59:06 - INFO - ACCELEROMETER	|	accel X=-1.195, accel Y=0.529, accel Z=0.975	| Sample rate: 110.33 Hz
+09:59:06 - INFO - MAGNETOMETER	|	magn X=28.411, magn Y=-4.540, magn Z=-0.589	| Sample rate: 81.50 Hz
+09:59:07 - INFO - GYROSCOPE   	|	gyro X=5.079, gyro Y=1.305, gyro Z=-277.550	| Sample rate: 109.37 Hz
+09:59:08 - INFO - ACCELEROMETER	|	accel X=0.133, accel Y=0.116, accel Z=0.995	| Sample rate: 109.31 Hz
+09:59:08 - INFO - TEMPERATURE 	|	16.060	| Sample rate: 1.11 Hz
+09:59:08 - INFO - MAGNETOMETER	|	magn X=25.580, magn Y=-0.409, magn Z=-1.119	| Sample rate: 80.82 Hz
+09:59:09 - INFO - POWER       	|	4.166	| Sample rate: 1.11 Hz
+09:59:10 - INFO - GYROSCOPE   	|	gyro X=-0.233, gyro Y=0.093, gyro Z=-10.112	| Sample rate: 111.61 Hz
+09:59:10 - INFO - MAGNETOMETER	|	magn X=27.203, magn Y=-0.902, magn Z=-0.541	| Sample rate: 80.60 Hz
+09:59:10 - INFO - ACCELEROMETER	|	accel X=-0.706, accel Y=-0.191, accel Z=0.998	| Sample rate: 109.67 Hz
+09:59:11 - INFO - TEMPERATURE 	|	16.060	| Sample rate: 1.11 Hz
+09:59:12 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:59:12 - INFO - GYROSCOPE   	|	gyro X=4.940, gyro Y=5.033, gyro Z=-319.210	| Sample rate: 109.10 Hz
+09:59:12 - INFO - ACCELEROMETER	|	accel X=-0.243, accel Y=-0.237, accel Z=1.020	| Sample rate: 110.42 Hz
+09:59:12 - INFO - MAGNETOMETER	|	magn X=28.470, magn Y=-4.159, magn Z=-0.435	| Sample rate: 81.59 Hz
+09:59:14 - INFO - TEMPERATURE 	|	16.070	| Sample rate: 1.11 Hz
+09:59:14 - INFO - GYROSCOPE   	|	gyro X=6.850, gyro Y=5.592, gyro Z=-422.243	| Sample rate: 111.20 Hz
+09:59:14 - INFO - ACCELEROMETER	|	accel X=-0.042, accel Y=-0.351, accel Z=0.993	| Sample rate: 109.60 Hz
+09:59:14 - INFO - MAGNETOMETER	|	magn X=27.395, magn Y=-1.129, magn Z=-0.657	| Sample rate: 81.49 Hz
+09:59:15 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:59:16 - INFO - GYROSCOPE   	|	gyro X=4.823, gyro Y=4.124, gyro Z=-422.219	| Sample rate: 109.05 Hz
+09:59:16 - INFO - ACCELEROMETER	|	accel X=0.351, accel Y=-0.529, accel Z=1.023	| Sample rate: 110.07 Hz
+09:59:16 - INFO - MAGNETOMETER	|	magn X=24.133, magn Y=-0.437, magn Z=-0.845	| Sample rate: 81.29 Hz
+09:59:17 - INFO - TEMPERATURE 	|	16.050	| Sample rate: 1.11 Hz
+09:59:18 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:59:18 - INFO - GYROSCOPE   	|	gyro X=3.146, gyro Y=2.074, gyro Z=-387.106	| Sample rate: 111.33 Hz
+09:59:18 - INFO - MAGNETOMETER	|	magn X=25.800, magn Y=-0.463, magn Z=-1.746	| Sample rate: 80.50 Hz
+09:59:18 - INFO - ACCELEROMETER	|	accel X=-0.172, accel Y=-0.354, accel Z=1.019	| Sample rate: 109.44 Hz
+09:59:19 - INFO - TEMPERATURE 	|	16.070	| Sample rate: 1.10 Hz
+09:59:20 - INFO - GYROSCOPE   	|	gyro X=2.167, gyro Y=1.095, gyro Z=-203.922	| Sample rate: 110.09 Hz
+09:59:20 - INFO - ACCELEROMETER	|	accel X=0.091, accel Y=0.188, accel Z=1.011	| Sample rate: 110.29 Hz
+09:59:20 - INFO - MAGNETOMETER	|	magn X=25.148, magn Y=-0.416, magn Z=-2.249	| Sample rate: 81.40 Hz
+09:59:21 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:59:22 - INFO - TEMPERATURE 	|	16.060	| Sample rate: 1.11 Hz
+09:59:22 - INFO - GYROSCOPE   	|	gyro X=1.445, gyro Y=1.025, gyro Z=-103.475	| Sample rate: 109.08 Hz
+09:59:23 - INFO - MAGNETOMETER	|	magn X=28.774, magn Y=-3.890, magn Z=-0.304	| Sample rate: 80.44 Hz
+09:59:23 - INFO - ACCELEROMETER	|	accel X=0.374, accel Y=-0.304, accel Z=0.992	| Sample rate: 108.87 Hz
+09:59:23 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:59:24 - INFO - GYROSCOPE   	|	gyro X=0.839, gyro Y=0.256, gyro Z=-64.052	| Sample rate: 111.41 Hz
+09:59:25 - INFO - ACCELEROMETER	|	accel X=-0.015, accel Y=-0.171, accel Z=0.989	| Sample rate: 110.00 Hz
+09:59:25 - INFO - TEMPERATURE 	|	16.100	| Sample rate: 1.11 Hz
+09:59:25 - INFO - MAGNETOMETER	|	magn X=28.631, magn Y=-3.794, magn Z=-0.409	| Sample rate: 81.19 Hz
+09:59:26 - INFO - POWER       	|	4.177	| Sample rate: 1.11 Hz
+09:59:26 - INFO - GYROSCOPE   	|	gyro X=0.233, gyro Y=0.023, gyro Z=-15.891	| Sample rate: 108.88 Hz
+09:59:27 - INFO - ACCELEROMETER	|	accel X=-0.634, accel Y=0.285, accel Z=0.981	| Sample rate: 110.54 Hz
+09:59:27 - INFO - MAGNETOMETER	|	magn X=28.171, magn Y=-4.835, magn Z=-0.490	| Sample rate: 81.79 Hz
+09:59:28 - INFO - TEMPERATURE 	|	16.090	| Sample rate: 1.10 Hz
+09:59:28 - INFO - GYROSCOPE   	|	gyro X=-1.212, gyro Y=0.396, gyro Z=-7.875	| Sample rate: 111.52 Hz
+09:59:29 - INFO - POWER       	|	4.166	| Sample rate: 1.11 Hz
+09:59:29 - INFO - MAGNETOMETER	|	magn X=28.643, magn Y=-3.133, magn Z=-0.472	| Sample rate: 81.70 Hz
+09:59:29 - INFO - ACCELEROMETER	|	accel X=-0.255, accel Y=0.560, accel Z=0.987	| Sample rate: 111.38 Hz
+09:59:30 - INFO - TEMPERATURE 	|	16.110	| Sample rate: 1.10 Hz
+09:59:30 - INFO - GYROSCOPE   	|	gyro X=5.476, gyro Y=1.235, gyro Z=-327.668	| Sample rate: 110.19 Hz
+09:59:31 - INFO - MAGNETOMETER	|	magn X=25.307, magn Y=-0.402, magn Z=-1.268	| Sample rate: 81.26 Hz
+09:59:31 - INFO - ACCELEROMETER	|	accel X=-0.327, accel Y=-0.411, accel Z=0.986	| Sample rate: 111.18 Hz
+09:59:32 - INFO - POWER       	|	4.177	| Sample rate: 1.10 Hz
+09:59:32 - INFO - GYROSCOPE   	|	gyro X=1.981, gyro Y=0.443, gyro Z=-88.167	| Sample rate: 108.96 Hz
+09:59:33 - INFO - TEMPERATURE 	|	16.120	| Sample rate: 1.10 Hz
+09:59:33 - INFO - ACCELEROMETER	|	accel X=-0.014, accel Y=-0.167, accel Z=1.009	| Sample rate: 109.32 Hz
+09:59:33 - INFO - MAGNETOMETER	|	magn X=28.503, magn Y=-2.312, magn Z=-0.303	| Sample rate: 81.58 Hz
+09:59:34 - INFO - GYROSCOPE   	|	gyro X=6.198, gyro Y=2.027, gyro Z=-346.797	| Sample rate: 111.85 Hz
+09:59:35 - INFO - POWER       	|	4.183	| Sample rate: 1.11 Hz
+09:59:35 - INFO - ACCELEROMETER	|	accel X=0.164, accel Y=0.255, accel Z=1.003	| Sample rate: 110.42 Hz
+09:59:35 - INFO - MAGNETOMETER	|	magn X=28.409, magn Y=-4.844, magn Z=-0.369	| Sample rate: 81.76 Hz
+09:59:36 - INFO - TEMPERATURE 	|	16.100	| Sample rate: 1.10 Hz
+09:59:36 - INFO - GYROSCOPE   	|	gyro X=2.237, gyro Y=0.536, gyro Z=-30.337	| Sample rate: 109.67 Hz
+09:59:37 - INFO - POWER       	|	4.183	| Sample rate: 1.10 Hz
+09:59:37 - INFO - MAGNETOMETER	|	magn X=28.839, magn Y=-4.072, magn Z=-0.276	| Sample rate: 80.82 Hz
+09:59:37 - INFO - ACCELEROMETER	|	accel X=-0.184, accel Y=0.167, accel Z=1.017	| Sample rate: 110.40 Hz
+09:59:38 - INFO - GYROSCOPE   	|	gyro X=2.749, gyro Y=0.350, gyro Z=-62.933	| Sample rate: 110.64 Hz
+09:59:39 - INFO - TEMPERATURE 	|	16.110	| Sample rate: 1.10 Hz
+09:59:39 - INFO - ACCELEROMETER	|	accel X=0.160, accel Y=-0.797, accel Z=1.061	| Sample rate: 109.32 Hz
+09:59:39 - INFO - MAGNETOMETER	|	magn X=27.850, magn Y=-1.503, magn Z=-0.346	| Sample rate: 81.47 Hz
+09:59:40 - INFO - POWER       	|	4.183	| Sample rate: 1.10 Hz
+09:59:41 - INFO - GYROSCOPE   	|	gyro X=0.513, gyro Y=-0.023, gyro Z=-6.244	| Sample rate: 109.39 Hz
+09:59:41 - INFO - TEMPERATURE 	|	16.130	| Sample rate: 1.10 Hz
+09:59:41 - INFO - ACCELEROMETER	|	accel X=0.049, accel Y=0.279, accel Z=1.016	| Sample rate: 111.40 Hz
+09:59:41 - INFO - MAGNETOMETER	|	magn X=25.786, magn Y=-0.444, magn Z=-1.612	| Sample rate: 82.28 Hz
+09:59:42 - INFO - POWER       	|	4.171	| Sample rate: 1.10 Hz
+09:59:43 - INFO - GYROSCOPE   	|	gyro X=0.769, gyro Y=0.093, gyro Z=-17.126	| Sample rate: 111.49 Hz
+09:59:43 - INFO - MAGNETOMETER	|	magn X=28.727, magn Y=-4.047, magn Z=-0.338	| Sample rate: 80.02 Hz
+09:59:43 - INFO - ACCELEROMETER	|	accel X=0.734, accel Y=-0.214, accel Z=1.011	| Sample rate: 108.99 Hz
+09:59:44 - INFO - POWER       	|	4.166	| Sample rate: 1.09 Hz
+09:59:44 - INFO - TEMPERATURE 	|	16.140	| Sample rate: 1.09 Hz
+09:59:45 - INFO - GYROSCOPE   	|	gyro X=1.631, gyro Y=1.095, gyro Z=-201.452	| Sample rate: 109.20 Hz
+09:59:45 - INFO - ACCELEROMETER	|	accel X=-0.310, accel Y=-0.345, accel Z=0.982	| Sample rate: 110.31 Hz
+09:59:45 - INFO - MAGNETOMETER	|	magn X=28.098, magn Y=-5.176, magn Z=-0.548	| Sample rate: 81.51 Hz
+09:59:47 - INFO - POWER       	|	4.166	| Sample rate: 1.11 Hz
+09:59:47 - INFO - TEMPERATURE 	|	16.130	| Sample rate: 1.11 Hz
+09:59:47 - INFO - GYROSCOPE   	|	gyro X=0.513, gyro Y=0.583, gyro Z=-78.661	| Sample rate: 110.42 Hz
+09:59:47 - INFO - ACCELEROMETER	|	accel X=-0.763, accel Y=0.010, accel Z=0.973	| Sample rate: 108.94 Hz
+09:59:47 - INFO - MAGNETOMETER	|	magn X=28.552, magn Y=-4.105, magn Z=-0.450	| Sample rate: 81.10 Hz
+09:59:49 - INFO - GYROSCOPE   	|		| Sample rate: 109.25 Hz
+09:59:49 - INFO - ACCELEROMETER	|	accel X=0.066, accel Y=-0.332, accel Z=0.992	| Sample rate: 110.32 Hz
+09:59:49 - INFO - MAGNETOMETER	|	magn X=28.662, magn Y=-3.261, magn Z=-0.402	| Sample rate: 81.61 Hz
+09:59:50 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:59:50 - INFO - TEMPERATURE 	|	16.150	| Sample rate: 1.11 Hz
+09:59:51 - INFO - GYROSCOPE   	|	gyro X=5.988, gyro Y=1.841, gyro Z=-388.947	| Sample rate: 111.55 Hz
+09:59:51 - INFO - MAGNETOMETER	|	magn X=26.911, magn Y=-0.725, magn Z=-0.850	| Sample rate: 80.61 Hz
+09:59:51 - INFO - ACCELEROMETER	|	accel X=-0.995, accel Y=0.101, accel Z=0.962	| Sample rate: 109.21 Hz
+09:59:52 - INFO - TEMPERATURE 	|	16.140	| Sample rate: 1.11 Hz
+09:59:53 - INFO - POWER       	|	4.183	| Sample rate: 1.12 Hz
+09:59:53 - INFO - GYROSCOPE   	|	gyro X=6.408, gyro Y=4.777, gyro Z=-439.624	| Sample rate: 109.13 Hz
+09:59:54 - INFO - ACCELEROMETER	|	accel X=0.056, accel Y=0.350, accel Z=1.019	| Sample rate: 111.12 Hz
+09:59:54 - INFO - MAGNETOMETER	|	magn X=26.464, magn Y=-0.563, magn Z=-0.976	| Sample rate: 82.02 Hz
+09:59:55 - INFO - TEMPERATURE 	|	16.160	| Sample rate: 1.10 Hz
+09:59:55 - INFO - GYROSCOPE   	|	gyro X=6.477, gyro Y=6.244, gyro Z=-456.237	| Sample rate: 111.08 Hz
+09:59:56 - INFO - POWER       	|	4.183	| Sample rate: 1.11 Hz
+09:59:56 - INFO - ACCELEROMETER	|	accel X=0.000, accel Y=-0.294, accel Z=0.996	| Sample rate: 109.49 Hz
+09:59:56 - INFO - MAGNETOMETER	|	magn X=26.920, magn Y=-0.814, magn Z=-0.611	| Sample rate: 81.51 Hz
+09:59:57 - INFO - GYROSCOPE   	|	gyro X=5.103, gyro Y=4.916, gyro Z=-333.376	| Sample rate: 109.30 Hz
+09:59:58 - INFO - ACCELEROMETER	|	accel X=0.003, accel Y=-0.038, accel Z=1.010	| Sample rate: 109.31 Hz
+09:59:58 - INFO - TEMPERATURE 	|	16.160	| Sample rate: 1.10 Hz
+09:59:58 - INFO - MAGNETOMETER	|	magn X=27.790, magn Y=-1.281, magn Z=-0.395	| Sample rate: 81.47 Hz
+09:59:59 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+09:59:59 - INFO - GYROSCOPE   	|	gyro X=4.008, gyro Y=2.773, gyro Z=-303.366	| Sample rate: 111.08 Hz
+10:00:00 - INFO - TEMPERATURE 	|	16.170	| Sample rate: 1.10 Hz
+10:00:00 - INFO - MAGNETOMETER	|	magn X=27.783, magn Y=-5.686, magn Z=-0.422	| Sample rate: 80.44 Hz
+10:00:00 - INFO - ACCELEROMETER	|	accel X=0.325, accel Y=-0.025, accel Z=1.015	| Sample rate: 110.05 Hz
+10:00:02 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+10:00:02 - INFO - GYROSCOPE   	|	gyro X=1.235, gyro Y=1.468, gyro Z=-142.480	| Sample rate: 109.30 Hz
+10:00:02 - INFO - ACCELEROMETER	|	accel X=-0.850, accel Y=0.332, accel Z=1.006	| Sample rate: 109.21 Hz
+10:00:02 - INFO - MAGNETOMETER	|	magn X=28.549, magn Y=-3.892, magn Z=-0.432	| Sample rate: 81.37 Hz
+10:00:03 - INFO - TEMPERATURE 	|	16.170	| Sample rate: 1.10 Hz
+10:00:04 - INFO - GYROSCOPE   	|	gyro X=1.841, gyro Y=0.489, gyro Z=-92.827	| Sample rate: 111.15 Hz
+10:00:04 - INFO - ACCELEROMETER	|	accel X=-0.614, accel Y=0.102, accel Z=1.021	| Sample rate: 111.37 Hz
+10:00:04 - INFO - MAGNETOMETER	|	magn X=28.680, magn Y=-3.600, magn Z=-0.403	| Sample rate: 80.75 Hz
+10:00:05 - INFO - POWER       	|	4.166	| Sample rate: 1.10 Hz
+10:00:06 - INFO - TEMPERATURE 	|	16.170	| Sample rate: 1.10 Hz
+10:00:06 - INFO - GYROSCOPE   	|	gyro X=2.703, gyro Y=2.097, gyro Z=-155.015	| Sample rate: 110.32 Hz
+10:00:06 - INFO - ACCELEROMETER	|	accel X=0.172, accel Y=-0.322, accel Z=1.030	| Sample rate: 108.94 Hz
+10:00:06 - INFO - MAGNETOMETER	|	magn X=28.652, magn Y=-3.647, magn Z=-0.300	| Sample rate: 81.09 Hz
+10:00:07 - INFO - POWER       	|	4.171	| Sample rate: 1.11 Hz
+10:00:08 - INFO - GYROSCOPE   	|	gyro X=2.260, gyro Y=1.771, gyro Z=-335.683	| Sample rate: 109.22 Hz
+10:00:08 - INFO - ACCELEROMETER	|	accel X=-0.027, accel Y=0.158, accel Z=1.011	| Sample rate: 110.22 Hz
+10:00:08 - INFO - MAGNETOMETER	|	magn X=28.554, magn Y=-4.133, magn Z=-0.359	| Sample rate: 81.74 Hz
+10:00:09 - INFO - POWER       	|	4.183	| Sample rate: 1.11 Hz
+10:00:09 - INFO - TEMPERATURE 	|	16.200	| Sample rate: 1.10 Hz
+10:00:10 - INFO - GYROSCOPE   	|	gyro X=11.790, gyro Y=0.839, gyro Z=-368.490	| Sample rate: 111.74 Hz
+10:00:10 - INFO - ACCELEROMETER	|	accel X=-0.004, accel Y=-0.018, accel Z=1.006	| Sample rate: 110.02 Hz
+10:00:10 - INFO - MAGNETOMETER	|	magn X=27.455, magn Y=-1.110, magn Z=-0.821	| Sample rate: 81.56 Hz
+10:00:12 - INFO - POWER       	|	4.189	| Sample rate: 1.11 Hz
+10:00:12 - INFO - TEMPERATURE 	|	16.180	| Sample rate: 1.10 Hz
+10:00:12 - INFO - GYROSCOPE   	|	gyro X=0.816, gyro Y=0.117, gyro Z=-8.924	| Sample rate: 109.51 Hz
+10:00:12 - INFO - ACCELEROMETER	|	accel X=0.411, accel Y=-0.772, accel Z=0.992	| Sample rate: 110.31 Hz
+10:00:12 - INFO - MAGNETOMETER	|	magn X=28.369, magn Y=-5.054, magn Z=-0.241	| Sample rate: 81.51 Hz
+10:00:14 - INFO - GYROSCOPE   	|	gyro X=0.676, gyro Y=0.210, gyro Z=-15.774	| Sample rate: 110.86 Hz
+10:00:14 - INFO - Response status from START_STOP: COMPLETION | OK
+10:00:14 - INFO - Command START_STOP sent with parameters: 01
+10:00:14 - INFO - Measurements halted.
+10:00:14 - INFO - Response status from POWER_OFF: COMPLETION | OK
+10:00:15 - INFO - Command POWER_OFF sent with parameters: 08
+10:00:15 - INFO - Stirrer 1 is off.
+10:00:15 - INFO - Disconnecting from device...
+10:00:18 - INFO - Disconnected successfully.
+10:00:18 - INFO - Metrics saved to metrics.csv
+10:00:18 - INFO - Statistics saved to statistics_log.csv

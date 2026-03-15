@@ -1,0 +1,15 @@
+Sensor,Total samples,Lost samples,Cyclic index mismatches
+POWER,180,2,1
+GYROSCOPE,19751,0,0
+ACCELEROMETER,19751,0,0
+TEMPERATURE,180,0,0
+COLOR,0,0,0
+MAGNETOMETER,14579,0,0
+CONDUCTIVITY,0,0,0
+SYSTEM_STATE,0,0,0
+SYSTEM_LOG,0,0,0
+NULL_CRC_EN_BIT,0,0,0
+
+Packet error type,Count
+Packet tag mismatches,0
+CRC failures,0
