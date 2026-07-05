@@ -20,6 +20,10 @@ The system combined:
 
 - embedded data processing for live prediction
 
+![Experimental Smart Stirrer setup](images/experimental_setup.jpg)
+
+*Experimental setup used to collect inertial sensor data.*
+
 ## Methods
 
 Sensor measurements were processed using rolling time windows to extract statistical features such as mean, standard deviation and root mean square values. These features were used to train regression models capable of estimating the composition of glycerol–water mixtures.
@@ -33,6 +37,16 @@ The regression model predicts glycerol volume fraction from the extracted sensor
 The trained model achieved a root mean square error of approximately 0.019 when predicting glycerol volume fraction from the extracted sensor features.
 
 The approach demonstrated that sensor measurements from a compact laboratory system can be used to infer fluid properties during operation.
+
+![Predicted versus actual glycerol fraction](images/predicted_vs_actual.png)
+
+*Final Gaussian Process Regression predictions compared with the measured glycerol volume fraction. RMSE ≈ 0.019.*
+
+
+
+![Real-time model predictions](images/realtime_prediction.png)
+
+*Real-time predictions during a test with an expected glycerol volume fraction of 0.71.*
 
 ## Limitations
 
